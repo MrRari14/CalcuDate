@@ -18,14 +18,15 @@ body {
     
 }
 
+.hidden {
+    display: none !important;
+}
+
 .unclickable {
     pointer-events: none;
     opacity: 50%;
 }
 
-.hidden {
-    opacity: 0;
-}
 
 header {
     display: flex;

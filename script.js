@@ -1,7 +1,6 @@
 const firstDate = document.getElementById("initial-date")
 const btnCalc = document.getElementById("btn-calc")
 const warning = document.getElementById("warning-1")
-
 const counterYear = document.getElementById("year-count")
 const counterMonth = document.getElementById("month-count")
 const counterDay = document.getElementById("day-count")
@@ -16,7 +15,7 @@ function dropdownOption () {
   firstDate.classList.remove("unclickable")
 
   if (selectValue != "count" && selectValue != "count-down") {
-    alert("chose")
+    alert("Please select an option to calculate")
     
   } else if (firstDate.value == "") {
     warning.classList.remove("hidden")
@@ -44,7 +43,6 @@ function dropdownOption () {
 
 
 function substractDates () {
-  
   setInterval(() => {
     const departureDate = new Date(firstDate.value)
     const actualDate = new Date()
@@ -74,7 +72,6 @@ function substractDates () {
     counterHour.innerHTML = hours
     counterMinute.innerHTML = minutes
     counterSecond.innerHTML = seconds
-
   }, 1000)
 }
 
